@@ -4,7 +4,7 @@ arch:
 language: minimal
 sudo: required
 before_install:
-  - curl -fsSL https://raw.githubusercontent.com/pschmitt/ci-setup-docker-buildx/master/setup.sh | bash
+  - curl -fsSL https://raw.githubusercontent.com/zeduperes/ci-setup-docker-buildx/master/setup.sh | bash
 script:
   - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
   - ./build.sh "$TARGET" "$GIT_TAG" -p
