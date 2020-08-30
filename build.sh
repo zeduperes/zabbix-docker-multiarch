@@ -63,7 +63,7 @@ get_available_architectures_safe() {
 }
 
 get_image_labels() {
-  local labels=("--label=built-by=pschmitt")
+  local labels=("--label=built-by=zeduperes")
   if [[ "$TRAVIS" == "true" ]]
   then
     labels+=("--label=build-type=travis")
@@ -118,7 +118,7 @@ array_join() {
 }
 
 get_image_names() {
-  local org=zabbixmultiarch
+  local org=zeduperes
   local project_prefix=zabbix
   local project="$1"
   local os="$2"
