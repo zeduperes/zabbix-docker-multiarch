@@ -64,4 +64,4 @@ jobs:
           DOCKER_CLI_EXPERIMENTAL: enabled
         run: |
           curl -fsSL https://raw.githubusercontent.com/zeduperes/ci-setup-docker-buildx/master/setup.sh | bash
-          ./build.sh ${{ matrix.target }} -p
+          ./build-all-tags.sh ${{ matrix.target }} -p
