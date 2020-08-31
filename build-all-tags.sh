@@ -26,7 +26,7 @@ case "$1" in
     ;;
 esac
 
-MAX_TAGS="$2"
+MAX_TAGS="$20"
 
 SUCCESSFUL_BUILDS=()
 FAILED_BUILDS=()
